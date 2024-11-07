@@ -21,8 +21,9 @@ public class MessageController {
     @PostMapping
     public ResponseEntity<MessageDTO> create(@RequestBody MessageDTO messageDTO){
         MessageDTO message = MessageDTO.builder()
-                .id(UUID.randomUUID().toString())
-                .mensagem(messageDTO.getMensagem())
+                .uniqueID(UUID.randomUUID().toString())
+                .subject(messageDTO.getSubject())
+                .payload(messageDTO.getPayload())
                 .build();
         messageProducer.send(message);
         return ResponseEntity.status(HttpStatus.CREATED).body(message);
