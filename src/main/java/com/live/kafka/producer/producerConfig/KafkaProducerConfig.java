@@ -1,11 +1,10 @@
 package com.live.kafka.producer.producerConfig;
 
 import com.live.kafka.producer.config.KafkaConfig;
-import com.live.kafka.producer.controller.MessageDTO;
+import com.live.kafka.producer.DTO.MessageDTO;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.core.DefaultKafkaProducerFactory;

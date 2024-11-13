@@ -1,5 +1,6 @@
 package com.live.kafka.producer.controller;
 
+import com.live.kafka.producer.DTO.MessageDTO;
 import com.live.kafka.producer.producer.MessageProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
