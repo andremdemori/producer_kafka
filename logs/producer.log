@@ -1,13 +1,14 @@
-13-11-2024 19:16:25:016  INFO 808697 --- [main] c.l.kafka.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.11 on demori with PID 808697 (/home/demori/spring_ws/kafka_e_RabbitMQ/kafka/producer/target/classes started by demori in /home/demori/spring_ws/kafka_e_RabbitMQ/kafka/producer)
-13-11-2024 19:16:25:016  INFO 808697 --- [main] c.l.kafka.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
-13-11-2024 19:16:26:016  INFO 808697 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=90bcfcb4-75cd-34db-b1d5-d2e026c1cd56
-13-11-2024 19:16:26:016  INFO 808697 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10002 (http)
-13-11-2024 19:16:26:016  INFO 808697 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-13-11-2024 19:16:26:016  INFO 808697 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
-13-11-2024 19:16:26:016  INFO 808697 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-13-11-2024 19:16:26:016  INFO 808697 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1131 ms
-13-11-2024 19:16:26:016  INFO 808697 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
-	bootstrap.servers = [localhost:29092]
+06-12-2024 01:01:36:001  INFO 101959 --- [main] c.l.kafka.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.11 on demori with PID 101959 (/home/demori/spring_ws/kafka_e_RabbitMQ/kafka/producer/target/classes started by demori in /home/demori/spring_ws/kafka_e_RabbitMQ/kafka/producer)
+06-12-2024 01:01:36:001  INFO 101959 --- [main] c.l.kafka.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+06-12-2024 01:01:36:001  INFO 101959 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=90bcfcb4-75cd-34db-b1d5-d2e026c1cd56
+06-12-2024 01:01:37:001  INFO 101959 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10002 (http)
+06-12-2024 01:01:37:001  INFO 101959 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+06-12-2024 01:01:37:001  INFO 101959 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+06-12-2024 01:01:37:001  INFO 101959 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+06-12-2024 01:01:37:001  INFO 101959 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1055 ms
+06-12-2024 01:01:38:001  INFO 101959 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+06-12-2024 01:01:38:001  INFO 101959 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [54.196.138.162:8080]
 	client.dns.lookup = use_all_dns_ips
 	client.id = 
 	connections.max.idle.ms = 300000
@@ -76,32 +77,132 @@
 	ssl.truststore.password = null
 	ssl.truststore.type = JKS
 
-13-11-2024 19:16:27:016  INFO 808697 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
-13-11-2024 19:16:27:016  INFO 808697 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
-13-11-2024 19:16:27:016  INFO 808697 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1731536187102
-13-11-2024 19:16:27:016  INFO 808697 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
-13-11-2024 19:16:27:016  INFO 808697 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
-13-11-2024 19:16:27:016  INFO 808697 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-13-11-2024 19:16:27:016  INFO 808697 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
-13-11-2024 19:16:27:016  INFO 808697 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10002 (http) with context path ''
-13-11-2024 19:16:27:016  INFO 808697 --- [main] c.l.kafka.producer.ProducerApplication   : Started ProducerApplication in 2.691 seconds (JVM running for 3.054)
-13-11-2024 19:16:34:016  INFO 808697 --- [http-nio-10002-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-13-11-2024 19:16:34:016  INFO 808697 --- [http-nio-10002-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-13-11-2024 19:16:34:016  INFO 808697 --- [http-nio-10002-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-13-11-2024 19:16:34:016  INFO 808697 --- [Thread-4] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-13-11-2024 19:16:34:016  INFO 808697 --- [Thread-4] o.apache.catalina.core.StandardWrapper   : Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
-13-11-2024 19:16:34:016  INFO 808697 --- [Thread-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-13-11-2024 19:16:36:016  INFO 808697 --- [Thread-4] o.s.boot.SpringApplication               : Starting application using Java 17.0.11 on demori with PID 808697 (started by demori in /home/demori/spring_ws/kafka_e_RabbitMQ/kafka/producer)
-13-11-2024 19:16:36:016  INFO 808697 --- [Thread-4] o.s.boot.SpringApplication               : No active profile set, falling back to 1 default profile: "default"
-13-11-2024 19:16:36:016  INFO 808697 --- [Thread-4] o.s.cloud.context.scope.GenericScope     : BeanFactory id=90bcfcb4-75cd-34db-b1d5-d2e026c1cd56
-13-11-2024 19:16:36:016  INFO 808697 --- [Thread-4] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10002 (http)
-13-11-2024 19:16:36:016  INFO 808697 --- [Thread-4] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-13-11-2024 19:16:36:016  INFO 808697 --- [Thread-4] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
-13-11-2024 19:16:36:016  INFO 808697 --- [Thread-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-13-11-2024 19:16:36:016  INFO 808697 --- [Thread-4] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 180 ms
-13-11-2024 19:16:37:016  INFO 808697 --- [Thread-4] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-13-11-2024 19:16:37:016  INFO 808697 --- [Thread-4] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
-	bootstrap.servers = [localhost:29092]
+06-12-2024 01:01:39:001  INFO 101959 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+06-12-2024 01:01:39:001  INFO 101959 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+06-12-2024 01:01:39:001  INFO 101959 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1733457699120
+06-12-2024 01:01:40:001  INFO 101959 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+06-12-2024 01:01:40:001  INFO 101959 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+06-12-2024 01:01:40:001  INFO 101959 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+06-12-2024 01:01:40:001  INFO 101959 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+06-12-2024 01:01:40:001  INFO 101959 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10002 (http) with context path ''
+06-12-2024 01:01:41:001  INFO 101959 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+06-12-2024 01:01:41:001  INFO 101959 --- [main] c.l.kafka.producer.ProducerApplication   : Started ProducerApplication in 6.577 seconds (JVM running for 6.953)
+06-12-2024 01:01:50:001  INFO 101959 --- [http-nio-10002-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-12-2024 01:01:50:001  INFO 101959 --- [http-nio-10002-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+06-12-2024 01:01:50:001  INFO 101959 --- [http-nio-10002-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+06-12-2024 01:01:50:001  INFO 101959 --- [http-nio-10002-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [54.196.138.162:8080]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+06-12-2024 01:01:50:001  INFO 101959 --- [http-nio-10002-exec-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+06-12-2024 01:01:50:001  INFO 101959 --- [http-nio-10002-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+06-12-2024 01:01:50:001  INFO 101959 --- [http-nio-10002-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+06-12-2024 01:01:50:001  INFO 101959 --- [http-nio-10002-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1733457710683
+06-12-2024 01:01:51:001  INFO 101959 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition mdlpbr2Tgi-0 to 0 since the associated topicId changed from null to 8YE3X1rPTuGAm7cRTcjRiQ
+06-12-2024 01:01:51:001  INFO 101959 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition mdlpbr2Tgi-2 to 0 since the associated topicId changed from null to 8YE3X1rPTuGAm7cRTcjRiQ
+06-12-2024 01:01:51:001  INFO 101959 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition mdlpbr2Tgi-1 to 0 since the associated topicId changed from null to 8YE3X1rPTuGAm7cRTcjRiQ
+06-12-2024 01:01:51:001  INFO 101959 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: IEXiwyT8RWujNSgK6mq9-w
+06-12-2024 01:01:51:001  INFO 101959 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 18015 with epoch 0
+06-12-2024 01:01:51:001  INFO 101959 --- [kafka-producer-network-thread | producer-1] c.l.k.producer.producer.MessageProducer  : Message sentMessageDTO(uniqueID=ba05bcdf-fb73-4a66-acfc-99b089f7e5ab, subject=teste de comunicação, payload=teste de comunicação )
+06-12-2024 01:01:55:001  INFO 101959 --- [kafka-producer-network-thread | producer-1] c.l.k.producer.producer.MessageProducer  : Message sentMessageDTO(uniqueID=2d9b313e-16cf-47ca-9f7b-d7201e498159, subject=teste de comunicação, payload=teste de comunicação )
+06-12-2024 01:02:14:002  INFO 101959 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+06-12-2024 01:02:14:002  INFO 101959 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+06-12-2024 01:02:14:002  INFO 101959 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+06-12-2024 01:02:14:002  INFO 101959 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+06-12-2024 01:02:14:002  INFO 101959 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+06-12-2024 10:14:40:014  INFO 108603 --- [main] c.l.kafka.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.11 on demori with PID 108603 (/home/demori/spring_ws/kafka_e_RabbitMQ/kafka/producer/target/classes started by demori in /home/demori/spring_ws/kafka_e_RabbitMQ/kafka/producer)
+06-12-2024 10:14:40:014  INFO 108603 --- [main] c.l.kafka.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+06-12-2024 10:14:40:014  INFO 108603 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=90bcfcb4-75cd-34db-b1d5-d2e026c1cd56
+06-12-2024 10:14:41:014  INFO 108603 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10002 (http)
+06-12-2024 10:14:41:014  INFO 108603 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+06-12-2024 10:14:41:014  INFO 108603 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+06-12-2024 10:14:41:014  INFO 108603 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+06-12-2024 10:14:41:014  INFO 108603 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1014 ms
+06-12-2024 10:14:42:014  INFO 108603 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+06-12-2024 10:14:42:014  INFO 108603 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [54.196.138.162:8080]
 	client.dns.lookup = use_all_dns_ips
 	client.id = 
 	connections.max.idle.ms = 300000
@@ -170,22 +271,26 @@
 	ssl.truststore.password = null
 	ssl.truststore.type = JKS
 
-13-11-2024 19:16:37:016  INFO 808697 --- [Thread-4] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
-13-11-2024 19:16:37:016  INFO 808697 --- [Thread-4] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
-13-11-2024 19:16:37:016  INFO 808697 --- [Thread-4] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1731536197483
-13-11-2024 19:16:37:016  INFO 808697 --- [kafka-admin-client-thread | adminclient-2] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-2 unregistered
-13-11-2024 19:16:37:016  INFO 808697 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
-13-11-2024 19:16:37:016  INFO 808697 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-13-11-2024 19:16:37:016  INFO 808697 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
-13-11-2024 19:16:37:016  INFO 808697 --- [Thread-4] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10002 (http) with context path ''
-13-11-2024 19:16:38:016  INFO 808697 --- [Thread-4] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-13-11-2024 19:16:38:016  INFO 808697 --- [Thread-4] o.s.boot.SpringApplication               : Started application in 3.627 seconds (JVM running for 14.106)
-13-11-2024 19:17:01:017  INFO 809056 --- [main] c.l.k.producer.ProducerApplicationTests  : Starting ProducerApplicationTests using Java 17.0.12 on demori with PID 809056 (started by demori in /home/demori/spring_ws/kafka_e_RabbitMQ/kafka/producer)
-13-11-2024 19:17:01:017  INFO 809056 --- [main] c.l.k.producer.ProducerApplicationTests  : No active profile set, falling back to 1 default profile: "default"
-13-11-2024 19:17:01:017  INFO 809056 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6466a1a5-5867-3998-a40b-17544943b346
-13-11-2024 19:17:03:017  INFO 809056 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
-13-11-2024 19:17:03:017  INFO 809056 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
-	bootstrap.servers = [localhost:29092]
+06-12-2024 10:14:42:014  INFO 108603 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+06-12-2024 10:14:42:014  INFO 108603 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+06-12-2024 10:14:42:014  INFO 108603 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1733490882922
+06-12-2024 10:14:44:014  INFO 108603 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+06-12-2024 10:14:44:014  INFO 108603 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+06-12-2024 10:14:44:014  INFO 108603 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+06-12-2024 10:14:44:014  INFO 108603 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+06-12-2024 10:14:44:014  INFO 108603 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10002 (http) with context path ''
+06-12-2024 10:14:45:014  INFO 108603 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+06-12-2024 10:14:45:014  INFO 108603 --- [main] c.l.kafka.producer.ProducerApplication   : Started ProducerApplication in 6.344 seconds (JVM running for 6.746)
+06-12-2024 10:19:05:019  INFO 108965 --- [main] c.l.kafka.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.11 on demori with PID 108965 (/home/demori/spring_ws/kafka_e_RabbitMQ/kafka/producer/target/classes started by demori in /home/demori/spring_ws/kafka_e_RabbitMQ/kafka/producer)
+06-12-2024 10:19:05:019  INFO 108965 --- [main] c.l.kafka.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+06-12-2024 10:19:05:019  INFO 108965 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=90bcfcb4-75cd-34db-b1d5-d2e026c1cd56
+06-12-2024 10:19:06:019  INFO 108965 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10002 (http)
+06-12-2024 10:19:06:019  INFO 108965 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+06-12-2024 10:19:06:019  INFO 108965 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+06-12-2024 10:19:06:019  INFO 108965 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+06-12-2024 10:19:06:019  INFO 108965 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1039 ms
+06-12-2024 10:19:06:019  INFO 108965 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [54.196.138.162:8080]
 	client.dns.lookup = use_all_dns_ips
 	client.id = 
 	connections.max.idle.ms = 300000
@@ -254,11 +359,314 @@
 	ssl.truststore.password = null
 	ssl.truststore.type = JKS
 
-13-11-2024 19:17:03:017  INFO 809056 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
-13-11-2024 19:17:03:017  INFO 809056 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
-13-11-2024 19:17:03:017  INFO 809056 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1731536223769
-13-11-2024 19:17:03:017  INFO 809056 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
-13-11-2024 19:17:03:017  INFO 809056 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
-13-11-2024 19:17:03:017  INFO 809056 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
-13-11-2024 19:17:03:017  INFO 809056 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
-13-11-2024 19:17:04:017  INFO 809056 --- [main] c.l.k.producer.ProducerApplicationTests  : Started ProducerApplicationTests in 4.001 seconds (JVM running for 4.716)
+06-12-2024 10:19:06:019  INFO 108965 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+06-12-2024 10:19:06:019  INFO 108965 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+06-12-2024 10:19:06:019  INFO 108965 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1733491146983
+06-12-2024 10:19:08:019  INFO 108965 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+06-12-2024 10:19:08:019  INFO 108965 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+06-12-2024 10:19:08:019  INFO 108965 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+06-12-2024 10:19:08:019  INFO 108965 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+06-12-2024 10:19:08:019  INFO 108965 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10002 (http) with context path ''
+06-12-2024 10:19:08:019  INFO 108965 --- [main] c.l.kafka.producer.ProducerApplication   : Started ProducerApplication in 3.459 seconds (JVM running for 3.799)
+06-12-2024 10:19:10:019  INFO 108965 --- [http-nio-10002-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-12-2024 10:19:10:019  INFO 108965 --- [http-nio-10002-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+06-12-2024 10:19:10:019  INFO 108965 --- [http-nio-10002-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+06-12-2024 10:19:10:019  INFO 108965 --- [http-nio-10002-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [54.196.138.162:8080]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+06-12-2024 10:19:10:019  INFO 108965 --- [http-nio-10002-exec-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+06-12-2024 10:19:10:019  INFO 108965 --- [http-nio-10002-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+06-12-2024 10:19:10:019  INFO 108965 --- [http-nio-10002-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+06-12-2024 10:19:10:019  INFO 108965 --- [http-nio-10002-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1733491150303
+06-12-2024 10:19:10:019  INFO 108965 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition mdlpbr2Tgi-0 to 0 since the associated topicId changed from null to 8YE3X1rPTuGAm7cRTcjRiQ
+06-12-2024 10:19:10:019  INFO 108965 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition mdlpbr2Tgi-2 to 0 since the associated topicId changed from null to 8YE3X1rPTuGAm7cRTcjRiQ
+06-12-2024 10:19:10:019  INFO 108965 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition mdlpbr2Tgi-1 to 0 since the associated topicId changed from null to 8YE3X1rPTuGAm7cRTcjRiQ
+06-12-2024 10:19:10:019  INFO 108965 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: IEXiwyT8RWujNSgK6mq9-w
+06-12-2024 10:19:10:019  INFO 108965 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 18019 with epoch 0
+06-12-2024 10:19:11:019  INFO 108965 --- [kafka-producer-network-thread | producer-1] c.l.k.producer.producer.MessageProducer  : Message sentMessageDTO(uniqueID=dae2094a-0456-4080-9e11-c782ddd20423, subject=teste de comunicação, payload=teste de comunicação )
+06-12-2024 10:19:13:019  INFO 108965 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+06-12-2024 10:19:13:019  INFO 108965 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+06-12-2024 10:19:13:019  INFO 108965 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+06-12-2024 10:19:13:019  INFO 108965 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+06-12-2024 10:19:13:019  INFO 108965 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+06-12-2024 10:35:47:035  INFO 110068 --- [main] c.l.kafka.producer.ProducerApplication   : Starting ProducerApplication using Java 17.0.11 on demori with PID 110068 (/home/demori/spring_ws/kafka_e_RabbitMQ/kafka/producer/target/classes started by demori in /home/demori/spring_ws/kafka_e_RabbitMQ/kafka/producer)
+06-12-2024 10:35:47:035  INFO 110068 --- [main] c.l.kafka.producer.ProducerApplication   : No active profile set, falling back to 1 default profile: "default"
+06-12-2024 10:35:48:035  INFO 110068 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=90bcfcb4-75cd-34db-b1d5-d2e026c1cd56
+06-12-2024 10:35:49:035  INFO 110068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 10002 (http)
+06-12-2024 10:35:49:035  INFO 110068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+06-12-2024 10:35:49:035  INFO 110068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.83]
+06-12-2024 10:35:49:035  INFO 110068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+06-12-2024 10:35:49:035  INFO 110068 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1360 ms
+06-12-2024 10:35:50:035  INFO 110068 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [54.196.138.162:8080]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+06-12-2024 10:35:50:035  INFO 110068 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+06-12-2024 10:35:50:035  INFO 110068 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+06-12-2024 10:35:50:035  INFO 110068 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1733492150178
+06-12-2024 10:35:51:035  INFO 110068 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+06-12-2024 10:35:51:035  INFO 110068 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+06-12-2024 10:35:51:035  INFO 110068 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+06-12-2024 10:35:51:035  INFO 110068 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+06-12-2024 10:35:51:035  INFO 110068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 10002 (http) with context path ''
+06-12-2024 10:35:51:035  INFO 110068 --- [main] c.l.kafka.producer.ProducerApplication   : Started ProducerApplication in 3.97 seconds (JVM running for 4.368)
+06-12-2024 10:35:52:035  INFO 110068 --- [http-nio-10002-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+06-12-2024 10:35:52:035  INFO 110068 --- [http-nio-10002-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+06-12-2024 10:35:52:035  INFO 110068 --- [http-nio-10002-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+06-12-2024 10:35:52:035  INFO 110068 --- [http-nio-10002-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [54.196.138.162:8080]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+06-12-2024 10:35:52:035  INFO 110068 --- [http-nio-10002-exec-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+06-12-2024 10:35:53:035  INFO 110068 --- [http-nio-10002-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+06-12-2024 10:35:53:035  INFO 110068 --- [http-nio-10002-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+06-12-2024 10:35:53:035  INFO 110068 --- [http-nio-10002-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1733492153008
+06-12-2024 10:35:53:035  INFO 110068 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition mdlpbr2Tgi-0 to 0 since the associated topicId changed from null to 8YE3X1rPTuGAm7cRTcjRiQ
+06-12-2024 10:35:53:035  INFO 110068 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition mdlpbr2Tgi-2 to 0 since the associated topicId changed from null to 8YE3X1rPTuGAm7cRTcjRiQ
+06-12-2024 10:35:53:035  INFO 110068 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition mdlpbr2Tgi-1 to 0 since the associated topicId changed from null to 8YE3X1rPTuGAm7cRTcjRiQ
+06-12-2024 10:35:53:035  INFO 110068 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: IEXiwyT8RWujNSgK6mq9-w
+06-12-2024 10:35:53:035  INFO 110068 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 18020 with epoch 0
+06-12-2024 10:35:53:035  INFO 110068 --- [kafka-producer-network-thread | producer-1] c.l.k.producer.producer.MessageProducer  : Message sentMessageDTO(uniqueID=736b49a4-af88-4fff-9979-8f44ded328b1, subject=teste de comunicação, payload=teste de comunicação )
+06-12-2024 10:44:53:044  INFO 110068 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+06-12-2024 10:55:24:055  INFO 110068 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Disconnecting from node 0 due to request timeout.
+06-12-2024 10:55:24:055  INFO 110068 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Cancelled in-flight METADATA request with correlation id 8 due to node 0 being disconnected (elapsed time since creation: 30028ms, elapsed time since send: 30028ms, request timeout: 30000ms)
+06-12-2024 11:00:54:000  INFO 110068 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Disconnecting from node 0 due to request timeout.
+06-12-2024 11:00:54:000  INFO 110068 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Cancelled in-flight METADATA request with correlation id 11 due to node 0 being disconnected (elapsed time since creation: 30029ms, elapsed time since send: 30029ms, request timeout: 30000ms)
+06-12-2024 11:06:25:006  INFO 110068 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Disconnecting from node 0 due to request timeout.
+06-12-2024 11:06:25:006  INFO 110068 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Cancelled in-flight METADATA request with correlation id 14 due to node 0 being disconnected (elapsed time since creation: 30028ms, elapsed time since send: 30028ms, request timeout: 30000ms)
+06-12-2024 11:07:07:007  INFO 110068 --- [SpringApplicationShutdownHook] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+06-12-2024 11:07:07:007  INFO 110068 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+06-12-2024 11:07:07:007  INFO 110068 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+06-12-2024 11:07:07:007  INFO 110068 --- [SpringApplicationShutdownHook] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+06-12-2024 11:07:07:007  INFO 110068 --- [SpringApplicationShutdownHook] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
