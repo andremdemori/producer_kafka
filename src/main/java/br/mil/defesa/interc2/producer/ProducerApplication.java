@@ -1,4 +1,4 @@
-package com.live.kafka.producer;
+package br.mil.defesa.interc2.producer;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.SpringApplication;

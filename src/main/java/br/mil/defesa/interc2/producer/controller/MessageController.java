@@ -1,7 +1,7 @@
-package com.live.kafka.producer.controller;
+package br.mil.defesa.interc2.producer.controller;
 
-import com.live.kafka.producer.DTO.TgiMessage;
-import com.live.kafka.producer.producer.MessageProducer;
+import br.mil.defesa.interc2.producer.DTO.TgiMessage;
+import br.mil.defesa.interc2.producer.producer.MessageProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

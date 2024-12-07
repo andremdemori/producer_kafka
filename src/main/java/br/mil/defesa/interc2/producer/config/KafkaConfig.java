@@ -1,4 +1,4 @@
-package com.live.kafka.producer.config;
+package br.mil.defesa.interc2.producer.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;

@@ -1,6 +1,6 @@
-package com.live.kafka.producer.controller;
+package br.mil.defesa.interc2.producer.controller;
 
-import com.live.kafka.producer.service.ConfigService;
+import br.mil.defesa.interc2.producer.service.ConfigService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,7 +1,7 @@
-package com.live.kafka.producer.producerConfig;
+package br.mil.defesa.interc2.producer.producerConfig;
 
-import com.live.kafka.producer.DTO.TgiMessage;
-import com.live.kafka.producer.config.KafkaConfig;
+import br.mil.defesa.interc2.producer.DTO.TgiMessage;
+import br.mil.defesa.interc2.producer.config.KafkaConfig;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;

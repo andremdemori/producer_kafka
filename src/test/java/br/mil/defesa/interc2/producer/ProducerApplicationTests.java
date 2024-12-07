@@ -1,4 +1,4 @@
-package com.live.kafka.producer;
+package br.mil.defesa.interc2.producer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

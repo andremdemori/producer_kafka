@@ -1,7 +1,7 @@
-package com.live.kafka.producer.producer;
+package br.mil.defesa.interc2.producer.producer;
 
-import com.live.kafka.producer.DTO.TgiMessage;
-import com.live.kafka.producer.config.KafkaConfig;
+import br.mil.defesa.interc2.producer.DTO.TgiMessage;
+import br.mil.defesa.interc2.producer.config.KafkaConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.core.KafkaTemplate;

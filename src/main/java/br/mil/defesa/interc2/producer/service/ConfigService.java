@@ -1,6 +1,6 @@
-package com.live.kafka.producer.service;
+package br.mil.defesa.interc2.producer.service;
 
-import com.live.kafka.producer.ProducerApplication;
+import br.mil.defesa.interc2.producer.ProducerApplication;
 import org.springframework.stereotype.Service;
 
 @Service
