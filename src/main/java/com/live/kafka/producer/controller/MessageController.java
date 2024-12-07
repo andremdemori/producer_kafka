@@ -1,6 +1,6 @@
 package com.live.kafka.producer.controller;
 
-import com.live.kafka.producer.DTO.MessageDTO;
+import com.live.kafka.producer.DTO.TgiMessage;
 import com.live.kafka.producer.producer.MessageProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -20,12 +20,14 @@ public class MessageController {
     private MessageProducer messageProducer;
 
     @PostMapping
-    public ResponseEntity<MessageDTO> create(@RequestBody MessageDTO messageDTO){
-        MessageDTO message = MessageDTO.builder()
-                .uniqueID(UUID.randomUUID().toString())
-                .subject(messageDTO.getSubject())
-                .payload(messageDTO.getPayload())
-                .build();
+    public ResponseEntity<TgiMessage> create(@RequestBody TgiMessage tgimessage){
+        // Usando o construtor padrão do record
+        TgiMessage message = new TgiMessage(
+                UUID.randomUUID().toString(),
+                tgimessage.subject(),
+                tgimessage.payload()
+        );
+
         messageProducer.send(message);
         return ResponseEntity.status(HttpStatus.CREATED).body(message);
     }

@@ -1,7 +1,7 @@
 package com.live.kafka.producer.producerConfig;
 
+import com.live.kafka.producer.DTO.TgiMessage;
 import com.live.kafka.producer.config.KafkaConfig;
-import com.live.kafka.producer.DTO.MessageDTO;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -30,7 +30,7 @@ public class KafkaProducerConfig {
     }
 
     @Bean
-    public ProducerFactory<String, MessageDTO> MessageProducerFactory() { //retorna o ProducerFactory
+    public ProducerFactory<String, TgiMessage> MessageProducerFactory() { //retorna o ProducerFactory
         Map<String, Object> configProps = new HashMap<>();
         configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, kafkaConfig.getSpringKafkaBootstrapServers());
         configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
@@ -39,7 +39,7 @@ public class KafkaProducerConfig {
     }
 
     @Bean
-    public KafkaTemplate<String, MessageDTO> kafkaTemplate() {
+    public KafkaTemplate<String, TgiMessage> kafkaTemplate() {
         return new KafkaTemplate<>(MessageProducerFactory());
     }
 
